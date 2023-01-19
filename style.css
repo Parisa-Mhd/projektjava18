@@ -1,0 +1,84 @@
+body{
+    background-color:#f4ddc7;
+}
+h1{
+    text-align: center;
+    margin: 100px;
+    font-size: 80px;
+    color: #a84c0f;
+   text-shadow:5px 5px #fbf2ed;
+}
+
+
+.calc-holder{
+    width: 300px;
+    /* box-shadow: 5px 5px 5px 5px rgb(32, 121, 132); */
+    border-radius: 30px;
+    /* margin: 100px auto; */
+    margin: 100px auto;
+    /* background-color: #f8f8f8d3;    */
+    padding: 30px 30px 30px 20px;
+    text-align: center;
+    background-color: #e9bda7;
+    
+}
+.row {
+display: flex;
+}
+#displayText{
+padding: 10px;
+border-bottom: 1px solid rgb(106, 7, 7);
+width: 245px;
+text-align: left;
+direction: ltr;
+font-size: 30px;
+font-family: system-ui;
+height: 25px;
+color: #6c1304;
+}
+button{
+width: 100px;
+height: 50px;
+border-radius: 50%;
+margin: 3px 6px;
+border: none;
+background-color:  #ef9966;
+font-size: 20px;
+font-weight: 500;
+color: #2e2e2e;
+transition: 0.4s;
+cursor: pointer;
+color: #9a4207;
+}
+button:hover{
+background-color: #8a3c0f;
+color: white;
+}
+.btn-num{
+font-weight: 600;
+}
+.btn-clear{
+color: red;
+}
+.btn-operate{
+font-size: 22px;
+}
+.btn-equal{
+background-color: #d46d32;
+color: white;
+}
+.btn-equal:hover{
+background-color: #873a0d;
+}
+#btn-backspace{
+color: rgb(147, 64, 64);
+position: relative;
+display: inline-block;
+top: 53px;
+height: 22px;
+border-bottom: 1px solid rgb(100, 14, 14);
+}
+#btn-backspace:hover{
+color: #2e2e2e;
+cursor: pointer;
+}

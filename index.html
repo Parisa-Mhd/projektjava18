@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>HTML</title>
+<link rel="stylesheet" href="./style.css">
+<body>
+
+<h1>Mein Taschenrechner</h1>
+
+<!-- <div>
+    <p><label>PreviousOperand: </label><span id="dPreviousOperand"></span></p>
+    <p><label>CurrentOperand: </label><span id="dCurrentOperand"></span></p>
+    <p><label>Operator: </label><span id="dOperator"></span></p>
+    <p><label>Output: </label><span id="dOutputText"></span></p>
+</div> -->
+
+<div class="calc-holder">
+    <div class="row">
+        <p id="displayText"></p>
+        <span id="btn-backspace" onclick="backspaceText()">&#9003;</span>
+    </div>
+    <div class="row">
+        <button class="btn-clear" onclick="clearText()">C</button>
+        <button onclick="sqrt()">&Sqrt;</button>
+        <button onclick="pow()">x^2</button>
+        <button class="btn-operate" data-val="/" onclick="doOperation(this)">÷</button>
+    </div>
+    <div class="row">
+        <button class="btn-num" onclick="setNumber(this)">7</button>
+        <button class="btn-num" onclick="setNumber(this)">8</button>
+        <button class="btn-num" onclick="setNumber(this)">9</button>
+        <button class="btn-operate"  data-val="*" onclick="doOperation(this)">&times;</button>
+    </div>
+    <div class="row">
+        <button class="btn-num" onclick="setNumber(this)">4</button>
+        <button class="btn-num" onclick="setNumber(this)">5</button>
+        <button class="btn-num" onclick="setNumber(this)">6</button>
+        <button class="btn-operate" data-val="-" onclick="doOperation(this)">-</button>
+    </div>
+    <div class="row">
+        <button class="btn-num" onclick="setNumber(this)">1</button>
+        <button class="btn-num" onclick="setNumber(this)">2</button>
+        <button class="btn-num" onclick="setNumber(this)">3</button>
+        <button class="btn-operate" data-val="+" onclick="doOperation(this)">+</button>
+    </div>
+    <div class="row">
+        <button onclick="negative()">+/-</button>
+        <button class="btn-num" onclick="setNumber(this)">0</button>
+        <button onclick="setDecimal()">.</button>
+        <button class="btn-operate btn-equal" onclick="equal()" data-val="=">=</button>
+    </div>
+</div>
+<script src="./java.js"></script>
+</body>
+</html>
